@@ -69,9 +69,9 @@ def main():
     module = AnsibleModule(
         argument_spec=dict(
             data=dict(type='str', default='pong'),
-            chg=dict(type='str', default=True)
+            chg=dict(type='bool', default=True)
         ),
-        supports_check_mode=false
+        supports_check_mode=False
     )
 
     if module.params['data'] == 'crash':
